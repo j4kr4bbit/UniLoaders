@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='UniLoaders',
-    version='0.1.4',
+    version='0.1.5',
     description='Loading everything from URLs to powerpoints',
     author='Enzo Bonelli', 
     long_description=long_description,

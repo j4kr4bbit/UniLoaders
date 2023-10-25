@@ -1,7 +1,7 @@
 from langchain.document_loaders import Docx2txtLoader
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.document_loaders import UnstructuredPowerPointLoader
-from langchain.document_loaders import unstructuredURLLoader
+from langchain.document_loaders import UnstructuredURLLoader
 
 
 def all_loaders(path: str):

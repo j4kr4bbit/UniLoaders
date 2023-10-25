@@ -19,5 +19,5 @@ def all_loaders(path: str):
     
     if "https" in path:
         urls = [path]
-        loader=unstructuredURLLoader
+        loader=unstructuredURLLoader(urls=url)
         return data.load()

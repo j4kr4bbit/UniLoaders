@@ -1,6 +1,8 @@
 from langchain.document_loaders import Docx2txtLoader
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.document_loaders import UnstructuredPowerPointLoader
+from langchain.document_loaders import unstructuredURLLoader
+
 
 def all_loaders(path: str):
     if path.endswith("docx"):
@@ -13,4 +15,9 @@ def all_loaders(path: str):
     
     if path.endswith("ppt"):
         data=UnstructuredPowerPointLoader(path)
+        return data.load()
+    
+    if "https" in path:
+        urls = [path]
+        loader=unstructuredURLLoader
         return data.load()

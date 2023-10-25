@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='UniLoaders',
-    version='0.0.7',
+    version='0.0.8',
     description='Loading everything from URLs to powerpoints',
     author='Enzo Bonelli', 
     long_description=long_description,
@@ -13,10 +13,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "langchain",
-        "pypdf",
-        "unstructured[pdf]",
         "unstructured[docx]",
-        "unstructured[ppt]",
         "docx2txt",
         "unstructured"
     ],

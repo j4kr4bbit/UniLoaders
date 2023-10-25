@@ -9,8 +9,6 @@ from langchain.document_loaders.image import UnstructuredImageLoader
 
 def all_loaders(path_or_url: str):
     filters = ["https", "http", "docx", "ppt", "pdf", "jpg", "png"]
-    for string not in filters:
-        return "TypeError"
     if "https" or "http" in path_or_url:
         url = [path_or_url]
         loader = UnstructuredURLLoader(urls=url)
@@ -36,3 +34,4 @@ def all_loaders(path_or_url: str):
         loader = UnstructuredImageLoader(path_or_url, mode="elements")
         data = loader.load()
         return data
+    return "TypeError"

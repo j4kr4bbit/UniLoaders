@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='UniLoaders',
-    version='0.1.6',
+    version='0.1.7',
     description='Loading everything from URLs to powerpoints',
     author='Enzo Bonelli', 
     long_description=long_description,
@@ -17,7 +17,8 @@ setup(
         "docx2txt",
         "unstructured",
         "pdfminer.six",
-        "pdf2image"
+        "pdf2image",
+        "boto3"
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
